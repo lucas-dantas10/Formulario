@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Formulário</title>
+
+		<!--CSS-->
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="formulario.css">
+
+		<!--FONTS-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	</head>
+	<body>
+
+		<header>
+			<h1>freeCodeCamp Survey Form</h1>
+			<p>thank you for taking the time to help us improve the plataform</p>
+		</header>
+
+		<main>
+			<form>
+				<label for="name">Name</label>
+				<input type="text" name="formulario" required placeholder="Your name" class="input-padrao">
+
+				<label for="email">Email</label>
+				<input type="email" name="formulario" required placeholder="Enter your Email" id="email" class="input-padrao">
+
+				<label for="age">Age(optional)</label>			
+				<input type="number" name="formulario" required placeholder="Your age" id="age" class="input-padrao">
+
+				<div class="form-group">
+			      	<p>Which option best describes your current role?</p>
+			      	<select id="dropdown" name="role" class="select" required>
+						<option disabled selected value>Select current role</option>
+						<option value="student">Student</option>
+						<option value="job">Full Time Job</option>
+						<option value="learner">Full Time Learner</option>
+						<option value="preferNo">Prefer not to say</option>
+						<option value="other">Other</option>
+			      	</select>
+		    	</div>
+
+				<fieldset>
+					<legend>Would you recommend freeCodeCamp to a friend?</legend>
+
+					<label for="radio-friends"><input type="radio" name="contato" id="radio-friends" checked>Definitely</label>
+
+					<label for="radio-maybe"><input type="radio" name="contato" id="radio-maybe">Maybe</label>
+
+					<label for="radio-notsure"><input type="radio" name="contato" id="radio-notsure">Not sure</label>
+
+				</fieldset>
+
+				<fieldset>
+					<legend>What is your favorite feature of freeCodeCamp?</legend>
+
+					 <div id="alvo" >
+				     	<select name="opcoes" class="select" required>
+				     		<option disabled selected value>Select an option</option>
+					        <option value="Challennges">Challenges</option>
+					        <option value="Projects">Projects</option>
+					        <option value="Community">Community</option>
+					        <option value="Open source">Open source</option>
+				       </select>			
+				</fieldset>
+
+				<fieldset>
+					<legend>What would you like to see improved? (Check all that apply)</legend>
+
+					<label for="checkbox"><input type="checkbox" class="input">Front-end-Projects</label>
+
+					<label for="check"><input type="checkbox" class="input">Back-end Projects</label>
+
+					<label for="caixa"><input type="checkbox" class="input">Data Visualization</label>
+
+					<label for="caixa"><input type="checkbox" class="input">Challenges</label>
+
+					<label for="caixa"><input type="checkbox" class="input">Open Source Community</label>
+
+					<label for="caixa"><input type="checkbox" class="input">Gitter help rooms</label>
+
+					<label for="caixa"><input type="checkbox" class="input">Videos</label>
+
+					<label for="caixa"><input type="checkbox" class="input">City Meetups</label>
+
+					<label for="caixa"><input type="checkbox" class="input">Wiki</label>
+
+					<label for="caixa"><input type="checkbox" class="input">Forum</label>
+
+					<label for="caixa"><input type="checkbox" class="input">Additional Courses</label>
+				</fieldset>
+
+				<label>Any comments or suggestions?</label>
+				<textarea placeholder="Enter your comment here..."></textarea>
+
+				<div class="input-enviar">
+					<input type="submit" value="submit" name="enviar" class="input-submit">
+				</div>
+				
+			</form>
+		</main>
+	</body>
+</html>
+
